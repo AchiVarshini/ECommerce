@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f3">
+  <title>SmartCart | Shop with a little more insight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="sparkle">✳</span> A more considered way to shop <span class="announcement-right">Free delivery on orders over $75</span></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="SmartCart home"><span class="brand-mark">s.</span><span>smartcart</span></a>
+    <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search the collection" autocomplete="off"><kbd>/</kbd></label>
+    <nav class="header-actions" aria-label="Main navigation">
+      <button id="shop-nav" class="nav-link active">Shop</button>
+      <button id="account-nav" class="nav-link">My account</button>
+      <button id="admin-nav" class="nav-link hidden">Studio</button>
+      <button id="cart-toggle" class="cart-button" aria-label="Open shopping bag"><span aria-hidden="true">♧</span><span>Bag</span><b id="cart-count">0</b></button>
+      <button id="auth-button" class="account-button">Sign in <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main id="shop-view" class="shop-view">
+    <section class="feature-strip" aria-label="Featured collection">
+      <div class="feature-copy">
+        <span class="eyebrow"><i></i> THE EVERYDAY EDIT</span>
+        <h1>Good things,<br><em>well chosen.</em></h1>
+        <p>Useful, beautiful finds for wherever the day takes you.</p>
+        <button id="browse-button" class="text-link">Explore the collection <span>↗</span></button>
+      </div>
+      <div class="feature-image"><span class="image-caption">Objects for living, made to last</span></div>
+      <div class="feature-stamp"><span>CURATED<br>FOR YOU</span><b>SC</b></div>
+    </section>
+
+    <section class="shop-layout" id="collection">
+      <aside class="filters">
+        <div class="section-label">DISCOVER</div>
+        <button class="filter-item selected" data-category="">All products <span class="filter-count" id="all-count"></span></button>
+        <div class="filter-heading">CATEGORIES</div>
+        <div id="category-list" class="category-list"></div>
+        <div class="filter-note"><span class="note-star">✳</span><p>Thoughtful picks, tailored as you browse.</p></div>
+      </aside>
+      <div class="catalog">
+        <div class="catalog-heading">
+          <div><span class="eyebrow" id="catalog-eyebrow">THE SMARTCART EDIT</span><h2 id="catalog-title">Find your <em>next favorite.</em></h2></div>
+          <label class="sort-control"><span>Sort by</span><select id="sort"><option value="popular">Featured</option><option value="rating">Top rated</option><option value="price_asc">Price: low to high</option><option value="price_desc">Price: high to low</option></select></label>
+        </div>
+        <div class="result-line"><span id="result-count">Loading collection</span><span class="result-rule"></span><span>Made for everyday</span></div>
+        <div id="products" class="product-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state hidden"><span>✳</span><h3>Nothing in this little corner.</h3><p>Try another search or category.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <main id="account-view" class="account-view hidden">
+    <div class="account-heading"><div><span class="eyebrow">YOUR SMARTCART</span><h1>A little more <em>personal.</em></h1></div><button id="signout-button" class="quiet-button">Sign out ↗</button></div>
+    <div id="dashboard" class="dashboard-content"><div class="loading-line">Gathering your picks...</div></div>
+  </main>
+
+  <main id="admin-view" class="admin-view hidden">
+    <div class="account-heading"><div><span class="eyebrow">SMARTCART STUDIO</span><h1>Good commerce,<br><em>clear signals.</em></h1></div><button id="admin-refresh" class="quiet-button">Refresh data ↻</button></div>
+    <div id="admin-dashboard" class="admin-content"><div class="loading-line">Loading store signals...</div></div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><span class="brand-mark">s.</span><span>smartcart</span></div><span>Thoughtfully found. Happily kept.</span><span id="footer-status">SHOP SMARTER, EVERY DAY</span></footer>
+
+  <div id="auth-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <section class="auth-panel">
+      <button class="modal-close" id="close-auth" aria-label="Close sign in">×</button>
+      <span class="eyebrow">WELCOME TO SMARTCART</span>
+      <h2 id="auth-title">Find your <em>way in.</em></h2>
+      <div class="auth-tabs"><button class="auth-tab active" data-mode="login">Sign in</button><button class="auth-tab" data-mode="register">Create account</button></div>
+      <form id="auth-form">
+        <label id="name-field" class="form-field hidden">Your name<input name="name" minlength="2" placeholder="Alex Morgan"></label>
+        <label class="form-field">Email address<input name="email" type="email" required placeholder="you@example.com" autocomplete="email"></label>
+        <label id="city-field" class="form-field hidden">City<input name="city" minlength="2" placeholder="Brooklyn"></label>
+        <label id="age-field" class="form-field hidden">Age<input name="age" type="number" min="13" max="110" placeholder="28"></label>
+        <label class="form-field">Password<input name="password" type="password" required minlength="8" placeholder="At least 8 characters" autocomplete="current-password"></label>
+        <button class="primary-button form-submit" type="submit"><span id="auth-submit-label">Sign in</span><span>↗</span></button>
+      </form>
+      <div class="demo-divider"><span>OR TRY A DEMO ACCOUNT</span></div>
+      <div class="demo-actions"><button id="demo-customer" class="demo-button"><span>Shopper</span><small>Sample account</small></button><button id="demo-admin" class="demo-button"><span>Store admin</span><small>Analytics access</small></button></div>
+      <p id="auth-message" class="auth-message" role="status"></p>
+    </section>
+  </div>
+
+  <div id="cart-drawer" class="drawer-backdrop hidden">
+    <aside class="cart-drawer" aria-label="Shopping bag"><div class="drawer-heading"><div><span class="eyebrow">YOUR EDIT</span><h2>Shopping bag <span id="drawer-count">(0)</span></h2></div><button id="close-cart" class="modal-close" aria-label="Close bag">×</button></div>
+      <div id="cart-items" class="cart-items"></div>
+      <div id="cart-footer" class="cart-footer"><div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><p>Shipping calculated at checkout.</p><button id="checkout-button" class="primary-button">Continue to checkout <span>↗</span></button><span class="secure-note">Secure checkout · Stock reserved at purchase</span></div>
+    </aside>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

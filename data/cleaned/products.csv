@@ -1,0 +1,61 @@
+product_id,product_name,category,price,rating,stock,discount
+1,Wireless Headphones,Electronics,139.16,4.9,34,0
+2,Smart Watch,Electronics,26.74,3.8,2,15
+3,Bluetooth Speaker,Electronics,251.66,4.2,76,0
+4,Tablet,Electronics,293.9,4.9,60,5
+5,USB-C Hub,Electronics,135.82,4.3,83,10
+6,Webcam,Electronics,201.48,4.0,66,5
+7,Portable Charger,Electronics,209.55,4.9,21,0
+8,Mechanical Keyboard,Electronics,35.97,4.6,15,5
+9,Smart Bulb,Electronics,250.47,4.2,49,5
+10,Fitness Tracker,Electronics,305.7,3.9,32,10
+11,Ceramic Vase,Home,177.56,3.4,45,0
+12,Cotton Throw,Home,262.96,4.1,12,10
+13,Desk Lamp,Home,149.63,4.7,5,15
+14,Storage Basket,Home,142.32,3.4,69,15
+15,Water Bottle,Home,163.7,4.2,53,5
+16,Cookware Set,Home,19.5,4.1,11,0
+17,Linen Sheets,Home,27.58,4.7,51,0
+18,Air Purifier,Home,233.11,4.0,43,5
+19,Coffee Grinder,Home,166.56,3.5,50,0
+20,Wall Clock,Home,207.03,3.4,4,0
+21,Canvas Sneakers,Fashion,22.16,4.3,9,20
+22,Leather Wallet,Fashion,176.68,3.2,74,10
+23,Everyday Tote,Fashion,157.16,4.4,73,0
+24,Wool Scarf,Fashion,218.28,4.9,51,0
+25,Denim Jacket,Fashion,304.62,4.3,66,15
+26,Silver Hoops,Fashion,72.85,3.9,62,20
+27,Running Cap,Fashion,267.51,4.3,48,15
+28,Classic Belt,Fashion,185.71,4.0,50,0
+29,Knit Sweater,Fashion,163.35,4.1,73,5
+30,Crossbody Bag,Fashion,11.27,5.0,87,20
+31,Daily Moisturizer,Beauty,230.13,3.5,17,20
+32,Vitamin C Serum,Beauty,86.15,3.3,3,0
+33,Cleansing Balm,Beauty,254.15,4.8,26,20
+34,Mineral Sunscreen,Beauty,259.03,3.8,26,5
+35,Hair Mask,Beauty,226.47,3.3,62,0
+36,Hand Cream,Beauty,230.78,3.8,62,0
+37,Face Mist,Beauty,164.66,3.4,22,10
+38,Lip Tint,Beauty,34.28,5.0,19,15
+39,Body Oil,Beauty,71.5,3.5,22,10
+40,Gentle Cleanser,Beauty,81.26,4.8,71,15
+41,Yoga Mat,Sports,258.64,3.9,83,15
+42,Resistance Bands,Sports,295.2,4.8,33,0
+43,Trail Bottle,Sports,68.79,3.4,33,0
+44,Foam Roller,Sports,197.5,3.8,27,5
+45,Jump Rope,Sports,287.87,4.3,83,0
+46,Cycling Gloves,Sports,37.6,4.4,71,0
+47,Training Shorts,Sports,53.43,4.3,50,10
+48,Hiking Socks,Sports,299.73,3.2,63,0
+49,Tennis Balls,Sports,110.38,3.5,25,0
+50,Gym Duffel,Sports,33.44,4.2,54,5
+51,The Creative Habit,Books,42.05,3.6,84,0
+52,Small Worlds,Books,162.37,4.1,27,10
+53,A Field Guide,Books,220.06,4.8,34,0
+54,Good Systems,Books,52.68,4.4,10,20
+55,The Long Way Home,Books,88.66,4.3,42,0
+56,Quiet Mornings,Books,116.03,3.9,25,0
+57,Deep Workdays,Books,95.02,4.3,26,15
+58,A New Perspective,Books,221.13,4.8,51,5
+59,Practical Design,Books,226.14,3.6,86,0
+60,The Last Library,Books,200.82,3.2,87,0

@@ -1,0 +1,13 @@
+{
+  "selected_clusters": 4,
+  "selection_reason": "Four actionable customer tiers were selected because their silhouette score is within 0.01 of the best candidate.",
+  "silhouette_scores": {
+    "2": 0.2750947458827887,
+    "3": 0.2546401544107198,
+    "4": 0.2714927906790904,
+    "5": 0.27063737742984484,
+    "6": 0.2720684961091516,
+    "7": 0.24560098421767418,
+    "8": 0.24927900097040892
+  }
+}

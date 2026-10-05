@@ -1,0 +1,392 @@
+{
+  "rows": {
+    "customers": 120,
+    "products": 60,
+    "orders": 1425,
+    "customer_activity": 7200
+  },
+  "missing_values_before_cleaning": {
+    "customers": {
+      "customer_id": 0,
+      "age": 0,
+      "gender": 0,
+      "city": 0,
+      "registration_date": 0,
+      "total_purchases": 0,
+      "total_spending": 0,
+      "average_order_value": 0,
+      "website_visits": 0
+    },
+    "products": {
+      "product_id": 0,
+      "product_name": 0,
+      "category": 0,
+      "price": 0,
+      "rating": 0,
+      "stock": 0,
+      "discount": 0
+    },
+    "orders": {
+      "order_id": 0,
+      "customer_id": 0,
+      "product_id": 0,
+      "quantity": 0,
+      "order_date": 0,
+      "price": 0,
+      "payment_method": 0,
+      "order_status": 0
+    },
+    "customer_activity": {
+      "customer_id": 0,
+      "product_id": 0,
+      "product_views": 0,
+      "cart_additions": 0,
+      "wishlist_additions": 0,
+      "previous_purchases": 0,
+      "time_spent": 0,
+      "purchased": 0
+    }
+  },
+  "duplicate_rows_removed": {
+    "customers": 0,
+    "products": 0,
+    "orders": 0,
+    "customer_activity": 0
+  },
+  "duplicate_keys_removed": {
+    "customers": 0,
+    "products": 0,
+    "orders": 0,
+    "customer_activity": 0
+  },
+  "issues_detected": {
+    "invalid_customer_ages": 0,
+    "invalid_product_prices": 0,
+    "missing_product_ratings_imputed": 0,
+    "invalid_order_customer_ids": 0,
+    "invalid_order_product_ids": 0
+  },
+  "checks_after_cleaning": {
+    "invalid_ages": 0,
+    "invalid_prices": 0,
+    "missing_ratings": 0,
+    "invalid_order_customer_ids": 0,
+    "invalid_order_product_ids": 0
+  },
+  "highest_sales_category": {
+    "category": "Electronics",
+    "revenue": 87896.69
+  },
+  "top_products_by_revenue": [
+    {
+      "product_id": 48,
+      "product_name": "Hiking Socks",
+      "revenue": 17084.61
+    },
+    {
+      "product_id": 10,
+      "product_name": "Fitness Tracker",
+      "revenue": 15285.0
+    },
+    {
+      "product_id": 45,
+      "product_name": "Jump Rope",
+      "revenue": 14393.5
+    },
+    {
+      "product_id": 25,
+      "product_name": "Denim Jacket",
+      "revenue": 14317.14
+    },
+    {
+      "product_id": 36,
+      "product_name": "Hand Cream",
+      "revenue": 14077.58
+    },
+    {
+      "product_id": 4,
+      "product_name": "Tablet",
+      "revenue": 13519.4
+    },
+    {
+      "product_id": 59,
+      "product_name": "Practical Design",
+      "revenue": 13342.26
+    },
+    {
+      "product_id": 53,
+      "product_name": "A Field Guide",
+      "revenue": 13203.6
+    }
+  ],
+  "top_customers_by_spend": [
+    {
+      "customer_id": 14,
+      "city": "Atlanta",
+      "spending": 7549.66
+    },
+    {
+      "customer_id": 80,
+      "city": "Denver",
+      "spending": 7284.1
+    },
+    {
+      "customer_id": 1,
+      "city": "San Diego",
+      "spending": 7207.53
+    },
+    {
+      "customer_id": 10,
+      "city": "Denver",
+      "spending": 7142.83
+    },
+    {
+      "customer_id": 3,
+      "city": "Atlanta",
+      "spending": 7081.96
+    },
+    {
+      "customer_id": 34,
+      "city": "Boston",
+      "spending": 7061.84
+    },
+    {
+      "customer_id": 21,
+      "city": "San Diego",
+      "spending": 7058.18
+    },
+    {
+      "customer_id": 52,
+      "city": "Boston",
+      "spending": 6914.03
+    }
+  ],
+  "average_order_value": 621.68,
+  "most_used_payment_method": {
+    "method": "Google Pay",
+    "orders": 161
+  },
+  "largest_customer_city": {
+    "city": "Boston",
+    "customers": 16
+  },
+  "highest_rated_products": [
+    {
+      "product_id": 30,
+      "product_name": "Crossbody Bag",
+      "rating": 5.0
+    },
+    {
+      "product_id": 38,
+      "product_name": "Lip Tint",
+      "rating": 5.0
+    },
+    {
+      "product_id": 1,
+      "product_name": "Wireless Headphones",
+      "rating": 4.9
+    },
+    {
+      "product_id": 4,
+      "product_name": "Tablet",
+      "rating": 4.9
+    },
+    {
+      "product_id": 7,
+      "product_name": "Portable Charger",
+      "rating": 4.9
+    },
+    {
+      "product_id": 24,
+      "product_name": "Wool Scarf",
+      "rating": 4.9
+    },
+    {
+      "product_id": 33,
+      "product_name": "Cleansing Balm",
+      "rating": 4.8
+    },
+    {
+      "product_id": 40,
+      "product_name": "Gentle Cleanser",
+      "rating": 4.8
+    }
+  ],
+  "repeat_customer_percentage": 99.17,
+  "monthly_revenue": [
+    {
+      "month": "2024-10",
+      "revenue": 18920.07
+    },
+    {
+      "month": "2024-11",
+      "revenue": 20854.89
+    },
+    {
+      "month": "2024-12",
+      "revenue": 17669.57
+    },
+    {
+      "month": "2025-01",
+      "revenue": 17630.46
+    },
+    {
+      "month": "2025-02",
+      "revenue": 21051.05
+    },
+    {
+      "month": "2025-03",
+      "revenue": 15713.05
+    },
+    {
+      "month": "2025-04",
+      "revenue": 18967.4
+    },
+    {
+      "month": "2025-05",
+      "revenue": 19450.1
+    },
+    {
+      "month": "2025-06",
+      "revenue": 18519.27
+    },
+    {
+      "month": "2025-07",
+      "revenue": 23236.77
+    },
+    {
+      "month": "2025-08",
+      "revenue": 22052.33
+    },
+    {
+      "month": "2025-09",
+      "revenue": 28491.83
+    },
+    {
+      "month": "2025-10",
+      "revenue": 12940.31
+    },
+    {
+      "month": "2025-11",
+      "revenue": 14160.1
+    },
+    {
+      "month": "2025-12",
+      "revenue": 14121.85
+    },
+    {
+      "month": "2026-01",
+      "revenue": 24909.17
+    },
+    {
+      "month": "2026-02",
+      "revenue": 20658.74
+    },
+    {
+      "month": "2026-03",
+      "revenue": 17660.54
+    },
+    {
+      "month": "2026-04",
+      "revenue": 14846.81
+    },
+    {
+      "month": "2026-05",
+      "revenue": 19290.52
+    },
+    {
+      "month": "2026-06",
+      "revenue": 16739.19
+    },
+    {
+      "month": "2026-07",
+      "revenue": 18434.04
+    },
+    {
+      "month": "2026-08",
+      "revenue": 17193.31
+    },
+    {
+      "month": "2026-09",
+      "revenue": 13286.71
+    },
+    {
+      "month": "2026-10",
+      "revenue": 814.51
+    }
+  ],
+  "low_stock_products": [
+    {
+      "product_id": 2,
+      "product_name": "Smart Watch",
+      "stock": 2
+    },
+    {
+      "product_id": 32,
+      "product_name": "Vitamin C Serum",
+      "stock": 3
+    },
+    {
+      "product_id": 20,
+      "product_name": "Wall Clock",
+      "stock": 4
+    },
+    {
+      "product_id": 13,
+      "product_name": "Desk Lamp",
+      "stock": 5
+    },
+    {
+      "product_id": 21,
+      "product_name": "Canvas Sneakers",
+      "stock": 9
+    },
+    {
+      "product_id": 54,
+      "product_name": "Good Systems",
+      "stock": 10
+    },
+    {
+      "product_id": 16,
+      "product_name": "Cookware Set",
+      "stock": 11
+    },
+    {
+      "product_id": 12,
+      "product_name": "Cotton Throw",
+      "stock": 12
+    }
+  ],
+  "category_sales": [
+    {
+      "category": "Electronics",
+      "revenue": 87896.69,
+      "units_sold": 493
+    },
+    {
+      "category": "Sports",
+      "revenue": 81062.01,
+      "units_sold": 504
+    },
+    {
+      "category": "Books",
+      "revenue": 77621.89,
+      "units_sold": 518
+    },
+    {
+      "category": "Beauty",
+      "revenue": 70009.69,
+      "units_sold": 439
+    },
+    {
+      "category": "Fashion",
+      "revenue": 68594.11,
+      "units_sold": 437
+    },
+    {
+      "category": "Home",
+      "revenue": 62428.2,
+      "units_sold": 427
+    }
+  ]
+}
